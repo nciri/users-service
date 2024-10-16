@@ -37,19 +37,18 @@ This project is a Spring Boot-based RESTful API for managing users and their rol
 
 ### 1. Clone the repository
 ```bash
-
 git clone https://github.com/nciri/users-service.git
 cd yourproject
-
+```
 ### 2. Configure the database
 Make sure PostgreSQL is installed and running. You need to create a database and configure the connection details.
 
 1- Create a new database:
-
+```bash
 CREATE DATABASE users_management;
-
+```
 2- Configure the database credentials in the src/main/resources/application.properties file:
-
+```bash
 spring.datasource.url=jdbc:postgresql://localhost:5432/users_management
 spring.datasource.username=yourusername
 spring.datasource.password=yourpassword
@@ -58,13 +57,17 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-
+```
 ### 3. Build the project
-Use Maven to build the project:  mvn clean install
-
+Use Maven to build the project:  
+```bash
+mvn clean install
+```
 ### 4. Run the application
-After building, run the application using the following command: mvn spring-boot:run
-
+After building, run the application using the following command: 
+```bash
+mvn spring-boot:run
+```
 The application will start on http://localhost:8080.
 
 ## API Endpoints
